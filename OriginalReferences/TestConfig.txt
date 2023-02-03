@@ -1,0 +1,2 @@
+..\..\..\..\Mariani\bin\Debug\net6.0\Mariani.dll
+Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=TAP_PROGETTO;Integrated Security =True;
