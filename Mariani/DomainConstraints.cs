@@ -9,4 +9,5 @@ public static class DomainConstraints
     public const int MinUserPassword = 4;
     public const int MinTimeZone = -12;
     public const int MaxTimeZone = 12;
+    public static string Connectionstring;
 }
