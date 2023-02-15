@@ -27,7 +27,7 @@ public class Auction : IAuction
 
     public Auction() { }
 
-    public Auction(IUser seller, string sellerUsername, string description, DateTime endsOn, int? currentlyWinnerUserId,
+    public Auction(IUser seller, string sellerUsername, string description, DateTime endsOn,
         IAlarmClock alarmClock, double startingPrice,
         double minimumBidIncrement, string sessionId)
     {
@@ -36,7 +36,6 @@ public class Auction : IAuction
         Description = description;
         EndsOn = endsOn;
         
-        //CurrentlyWinnerUserId = currentlyWinnerUserId;
         AlarmClock = alarmClock;
         Price = startingPrice;
         MinimumBidIncrement = minimumBidIncrement;

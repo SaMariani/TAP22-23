@@ -45,14 +45,14 @@ namespace Mariani
 
         public void EventHandler()
         {
-            var sessions = ToyGetSessions();
+            /*var sessions = ToyGetSessions();
             foreach (var session in sessions)
             {
                 if (AlarmClock.Now > session.ValidUntil)
                 {
                     session.Logout();
                 }
-            }
+            }*/
         }
 
         public IEnumerable<IUser> ToyGetUsers()
@@ -141,7 +141,7 @@ namespace Mariani
                 foreach (var auction in ac)
                 {
                     var user = db.Users.Single(u => u.Username == auction.SellerUsername);
-                    var a = new Auction(user, user.Username, auction.Description, auction.EndsOn, 2,
+                    var a = new Auction(user, user.Username, auction.Description, auction.EndsOn,
                         AlarmClock, auction.Price,
                         auction.MinimumBidIncrement,
                         auction.SessionId);

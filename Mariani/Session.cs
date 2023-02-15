@@ -102,8 +102,8 @@ namespace Mariani
             {
                 try
                 {
-                    var seller = c.Users.Single(u => u.UserId == UserId);/*/*//*/*/
-                    var a = new Auction(seller, seller.Username, description, endsOn, 1, AlarmClock, startingPrice, MinumumBidIncrement, Id);
+                    var seller = c.Users.Single(u => u.UserId == UserId);
+                    var a = new Auction(seller, seller.Username, description, endsOn, AlarmClock, startingPrice, MinumumBidIncrement, Id);
                     c.Auctions.Add(a);
                     var s = c.Sessions.Single(s => s.Id == Id);
                     s.ValidUntil = AlarmClock.Now.AddSeconds(SessionExpirationInSeconds);
